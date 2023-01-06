@@ -17,7 +17,6 @@ int main()
     map<int, vector<int>>::iterator m;
     vector<int>::iterator v;
 
-    for (m = student.begin(); m != student.end(); m++)
     {
         cout << m->first;
 
@@ -27,7 +26,7 @@ int main()
         }
         cout << endl;
     }
-// `````````````````````````````````````````````````````````````````````````
+    // `````````````````````````````````````````````````````````````````````````
     for (auto &p : student)
     {
         cout << p.first << ": ";
