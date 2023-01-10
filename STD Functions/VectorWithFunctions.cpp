@@ -11,6 +11,8 @@ private:
 public:
     std::vector<std::function<int()>>::iterator loop;
 
+    //loop = type of vector
+
     void RegisterCallback(std::function<int()> InputValues)
     {
         NewVector.push_back(InputValues);
