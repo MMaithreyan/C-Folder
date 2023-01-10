@@ -1,6 +1,6 @@
 #include <iostream>
 #include <chrono>
-#include<thread>
+#include <thread>
 
 int evensum = 0;
 int oddsum = 0;
@@ -35,7 +35,12 @@ int main()
 
     auto StartTime = std::chrono::high_resolution_clock::now();
 
-    std::thread
+    std::thread t1(odd, start, end);
+    std::thread t2(even, start, end);
+
+    t1.join();
+    t2.join();
+    
     // odd(start, end);
     // even(start, end);
 
