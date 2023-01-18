@@ -29,7 +29,7 @@ void even(int start, int end)
     }
 }
 int main()
-{
+{ 
 
     int start = 0, end = 1000000000;
 

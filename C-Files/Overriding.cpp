@@ -1,13 +1,15 @@
 #include <iostream>
 using namespace std;
+
 class Animal
 {
 public:
-    void eat()
+    void ate()
     {
         cout << "Eating...";
     }
 };
+
 class Dog : public Animal
 {
 public:
@@ -16,9 +18,10 @@ public:
         cout << "Eating bread...";
     }
 };
+
 int main(void)
 {
-    Animal d;
-    d.eat();
+    Dog obj;
+    obj.ate();
     return 0;
 }

@@ -1,26 +1,22 @@
 #include <iostream>
 using namespace std;
 
-class a
+class Pass
 {
 public:
     void run()
     {
-        cout << "This is class A";
+        cout << "This is class A : no values"<< std::endl;
     }
-};
-class b : public a
-{
-public:
-    void run()
+     void run(int par)
     {
-        cout << "This is class B";
+        cout << "This is class B with value : " << par << std::endl;
     }
 };
 
 int main()
 {
-    b obj;
+    Pass obj;
+    obj.run(55);
     obj.run();
-    obj.a::run();
 }

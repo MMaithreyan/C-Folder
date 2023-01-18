@@ -2,9 +2,9 @@
 int main()
 {
     int a = 10;
-    auto display = [&]()
+    auto display = [=]()
     {
-        a = 15;
+        // a = 15;
         std::cout << a << std::endl;
     };
     display();
