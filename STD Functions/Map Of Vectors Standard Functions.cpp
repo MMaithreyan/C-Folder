@@ -27,11 +27,8 @@ int main()
     Obj.RegisterCallback(Feed, 1);
 
     //Obj.CallEveryone(2);
-
     // Obj.GetValues(vectorSize);
 }
-
-
 
 class Map
 {
